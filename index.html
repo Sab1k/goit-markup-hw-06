@@ -313,7 +313,7 @@
 <!--Футер-->
 <footer class="footer">
     <div class="footer-flex container">
-        <div class="footer-address">
+        <div class="footer-address block">
     <a href="./" class="logo-footer"><span class="first-logo">Web</span><span class="footer-second-logo">Studio</span> </a>
    <address class="address">
        <p class="location"> г. Киев, пр-т Леси Украинки, 26 </p>  
@@ -323,7 +323,7 @@
         </ul>
     </address>
         </div>
-    <div class="join-container">
+    <div class="join-container block">
         <b class="join">ПРИСОЕДИНЯЙТЕСЬ</b>
         <ul class="social-icons">
             <li class="social-icons-items">
@@ -356,7 +356,18 @@
             </li>
         </ul>
     </div>
-    
+    <div class="email-container block">
+    <b class="join">Подпишитесь на рассылку</b>
+    <form class="form-footer">
+        <input class="footer-input" type="email" name="mail" placeholder="E-mail" id="mail" />
+        <button class="button primary" type="submit">Подписаться 
+            <svg class="icons" width="24" height="24">
+            <use href="./images/icons.svg/sprite.svg#icon-send"></use>
+        </svg>
+        </button>
+    </form>
+</div>
+
 </div>
 </footer>
 
@@ -368,32 +379,55 @@
             <svg class="icons" width="11" height="11">
                 <use href="./images/icons.svg/sprite.svg#icon-xxx"></use>
             </svg>
-            <form class="form js-speaker-form">
-                <div class="form-field">
-                <label for="name">Имя</label>
-                <input type="text" name="name" id="name" />
-                </div>
-                <div class="form-field">
-                <label for="tel">Телефон</label>
-                <input type="tel" name="tel" id="tel" />
-                </div>
-                <div class="form-field">
-                <label for="mail">Почта</label>
-                <input type="email" name="mail" id="mail" />
-                </div>
-                <div class="form-field">
-                <label for="comment">Коментарий</label>
-                <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Введите текст"></textarea>
-                </div>
-                <div class="form-field">
-                <input type="checkbox" name="policy" id="policy" />
-                <label for="policy">Соглашаюсь с рассылкой и принимаю Условия договора</label>
-                </div>
+        </button>
+            <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
                 
-                <button type="submit">Отправить</button>
+            <form class="form js-speaker-form">
+                
+                <label class="form-field">
+                <span class="form-label">Имя</span>    
+                <input type="text" class="form-input" name="name"  />
+                <svg class="icons-form" width="12" height="12">
+                    <use href="./images/icons.svg/sprite.svg#icon-person-black"></use>
+                </svg>
+                </label>
+                
+                <label class="form-field">
+                <span class="form-label"> Телефон </span>
+                <input type="tel" class="form-input" name="tel" />
+                <svg class="icons-form" width="12" height="12">
+                    <use href="./images/icons.svg/sprite.svg#icon-phone-black"></use>
+                </svg>
+                </label>
+                
+               
+                <label class="form-field">
+                <span class="form-label">Почта</span> 
+                <input type="email" class="form-input" name="mail" />
+                <svg class="icons-form" width="12" height="12">
+                    <use href="./images/icons.svg/sprite.svg#icon-email-black"></use>
+                </svg>  
+                </label>
+                   
+                
+                
+                
+                <label class="form-field"> 
+                <span class="form-label">Коментарий</span>
+                <textarea class="form-comment" name="comment" cols="30" rows="3" 
+                placeholder="Введите текст"></textarea>
+                </label>
+                <label class="form-field">
+                <input class="checkbox" type="checkbox" name="policy" />
+                <span class="icon-checkbox"></span>
+                <span>Соглашаюсь с рассылкой и принимаю</span> <a href="">Условия договора</a> 
+             </label>
+                
+                
+                <button class="button primary" type="submit">Отправить</button>
                 
             </form>
-        </button>
+        
     </div>
 </div>
 
